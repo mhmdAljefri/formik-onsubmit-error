@@ -36,9 +36,9 @@ function OnSubmitModalExample() {
       >
         {({ isValid, errors, handleSubmit }) => (
           <Form
-            onSubmit={(formProps) => {
+            onSubmit={(formEvent) => {
               if (!isValid) handleInValidForm(errors);
-              handleSubmit(formProps);
+              handleSubmit(formEvent);
             }}
           >
             <label htmlFor="firstName">First Name</label>
